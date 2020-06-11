@@ -1,0 +1,228 @@
+/*#boards {*/
+/*    background-color: green;*/
+/*}*/
+
+/* our codes*/
+
+.new-board {
+    display: none;
+
+}
+
+
+.chosen-board {
+    display: block;
+
+}
+
+.board-editor-closed {
+    display: none; !important;
+
+}
+
+.board-editor-open {
+    display: block; !important;
+
+}
+
+.open-board {
+    border: solid 2px white;
+    background: #eeeeee;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 25px;
+    color: black;
+    font-weight: bold;
+    opacity: 70%;
+}
+
+/* our codes end*/
+
+:root {
+    --border-radius: 3px;
+    --status-1: #f0ec0eab;
+    --status-2: #f0cc0e;
+    --status-3: #f08e0e;
+    --status-4: #f00e0e91;
+    --status-5: #0ed9f085;
+    --status-6: #0ef06b85;
+}
+
+body{
+    min-width: 620px;
+    /*background: #ddd url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/diagonal-noise.png);*/
+    font-family: sans-serif;
+    background-image: url("yellow_glove.jpg");
+    background-size: cover;
+}
+
+h1, .board-title, .board-column-title{
+    font-weight: 600;
+    color: #11557c;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 4em;
+    letter-spacing: 5px;
+    transform: scale(1.2, 1);
+}
+#underline {
+    text-align: center;
+    letter-spacing: 5px;
+    transform: scale(1.2, 1);
+}
+
+button{
+    background: steelblue;
+    color: lightyellow ;
+    border: none;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 4px 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.board-container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+section.board{
+    margin: 20px;
+    border: aliceblue;
+    background: #ffffff90;
+    border-radius: 10px;
+}
+
+.board-header{
+    height: 50px;
+    color: #11557C;
+    letter-spacing: 5px;
+    background: #fff;
+    /*border-radius: var(--border-radius) var(--border-radius) 0 0;*/
+    border-radius: 10px;
+    text-align: center;
+    height: max-content;
+    padding: 10px;
+
+}
+
+.board-title{
+    margin: 13px;
+    display: inline-block;
+    font-size: 20px;
+}
+.board-title, .board-add, .board-toggle{
+    display: inline-block;
+}
+
+.board-toggle{
+    float: right;
+    margin: 13px;
+}
+
+.board-columns{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.board-column{
+    padding: 10px;
+    flex: 1;
+}
+
+.board-column-content{
+    min-height: 49px;
+}
+
+.board-column-content:empty {
+    border: 4px solid #2191f182;
+    margin-top: 4px;
+    border-radius: 10px;
+    background: #a9d1e496;
+    background: #a9d1e496;
+}
+
+.board-column-title{
+    text-align: center;
+    text-transform: uppercase ;
+}
+
+.card{
+    position: relative;
+    background: #222;
+    color: #11557c;
+    border-radius: var(--border-radius);
+    margin: 4px 0;
+    padding: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.board-column:nth-of-type(1) .card{
+    background: var(--status-1);
+}
+
+.board-column:nth-of-type(2) .card{
+    background: var(--status-2);
+}
+
+.board-column:nth-of-type(3) .card{
+    background: var(--status-3);
+}
+
+.board-column:nth-of-type(4) .card{
+    background: var(--status-4);
+}
+
+.board-column:nth-of-type(5) .card{
+    background: var(--status-5);
+}
+
+.board-column:nth-of-type(6) .card{
+    background: var(--status-6);
+}
+
+
+
+.card-remove{
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.card-title{
+    padding-right: 16px;
+}
+
+.hold {
+    border: solid goldenrod 15px;
+    border-radius: 25px;
+    opacity: 40%;
+}
+
+.hovered {
+    border: dashed 4px goldenrod;
+    height: 100px;
+    width: 130px;
+    margin: 2px;
+    border-radius: var(--border-radius);
+    background: gold;
+ }
+
+.close-board, .add-new-column, .add-new-card {
+    margin-left: 20px;
+}
+
+.column-card-buttons {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}

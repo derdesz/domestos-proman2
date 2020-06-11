@@ -1,0 +1,12 @@
+click>=7.1.2
+Flask>=1.1.2
+itsdangerous>=1.1.0
+Jinja2>=2.11.2
+MarkupSafe>=1.1.1
+Werkzeug>=1.0.1
+wheel~=0.34.2
+setuptools~=46.0.0
+bcrypt~=3.1.7
+requests
+psycopg2==2.7.7
+
